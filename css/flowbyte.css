@@ -1,0 +1,17 @@
+/* OVERWRITE Bootstrap styles
+Flowbyte by Fiyin and Kosy
+21st November 2015 */
+
+/* Header colour */
+.f-head {
+	font-size: 2em;
+	font-style: italic;
+}
+
+.f-text-1 {
+	color: #54ca03;
+}
+
+.f-text-2 {
+	color: #1c72ba;
+}
