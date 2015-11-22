@@ -6,7 +6,16 @@ var h1 = document.getElementById('timer'),
     calcFlowRate = document.getElementById('calc-flow-rate'),
     result = document.getElementById('result'),
     seconds = 0, minutes = 0, hours = 0,
-    t, getTime, timeOfFlight, flowRateResult, volume;
+    t, getTime, timeOfFlight, flowRateResult, volume,
+    history = {
+    	time: '',
+    	flowRate: '',
+    	volume: '',
+    	dateTime: ''
+    },
+    historyOutput;
+
+    console.log('fresh hash: ', history);
 
 function add() {
     seconds++;
@@ -41,6 +50,8 @@ stop.onclick = function() {
 clear.onclick = function() {
     h1.textContent = "00:00:00";
     seconds = 0; minutes = 0; hours = 0;
+    document.getElementById('time-of-flight').value = "";
+    document.getElementById('serial-number').value = "";
 }
 
 calcFlowRate.onclick = function flowRate() {
@@ -51,7 +62,16 @@ calcFlowRate.onclick = function flowRate() {
 
     if (!isNaN(volume)){
         result.innerHTML = volume;
+        history.time = getTime;
+        history.flowRate = flowRateResult;
+        history.volume = volume;
+        history.dateTime = new Date();
     }
+    // console.log('hash: ', history);
+
+    // var h = document.createElement('li')
+    // var 
+    // document.getElementById('history-list').appendChild(history);
 }
 
 
