@@ -63,6 +63,7 @@ h6,
   color: #fff;
   font-family: quicksand,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: .9em;
+  font-weight: bolder;
   margin: 20px auto;
   outline: 0;
   padding: 15px;
@@ -78,8 +79,7 @@ h6,
 }
 
 h1#timer {
-	font-size: 6em;
-	padding-bottom: 20px;
+	font-size: 5em;
 }
 
 .btn-control {
@@ -143,9 +143,9 @@ h1#timer {
   background-color: transparent;
   border: 1px solid #54ca03;
   color: #54ca03;
-  font-size: 1.5em;
+  font-size: 1em;
   margin: 20px auto;
-  padding: 20px;
+  padding: 10px;
   outline: 5px;
   text-transform: uppercase;
 	transition: all .2s linear;
@@ -181,5 +181,15 @@ h1#timer {
 }
 
 #time-of-flight {
-    margin-bottom: 0;
+  margin-bottom: 0;
+}
+
+#display-result{
+  padding: 20px 20px 0 20px;
+}
+
+#result {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 10px;
 }
