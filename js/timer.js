@@ -59,9 +59,10 @@ calcFlowRate.onclick = function flowRate() {
     speedOfSound = Math.pow(1480, 2)
 	flowRateResult = (timeOfFlight * speedOfSound)/(2 * (0.0176 + 0.027));
 	volume = flowRateResult * getTime * ((Math.PI * Math.pow(0.0176, 2))/4);
+	volume = volume.toFixed(2);
 
     if (!isNaN(volume)){
-        result.innerHTML = volume;
+        result.innerHTML = 'Volume = ' + volume + ' Litres';
         history.time = getTime;
         history.flowRate = flowRateResult;
         history.volume = volume;
