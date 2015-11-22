@@ -78,7 +78,7 @@ h6,
 }
 
 h1#timer {
-	font-size: 8em;
+	font-size: 6em;
 	padding-bottom: 20px;
 }
 
@@ -92,12 +92,12 @@ h1#timer {
 
 .f-demo button:first-of-type {
 	background-color: #036503;
-	outline-color: #036503;	
+	outline-color: #036503;
 	transition: all .2s linear;
 }
 
 .f-demo button:first-of-type:hover {
-	background-color: #058605;	
+	background-color: #058605;
 }
 
 .f-demo button:nth-of-type(2) {
@@ -124,7 +124,7 @@ h1#timer {
   border: 1px solid #999;
   background-color: transparent;
   color: #fff;
-  font-size: 50px;
+  font-size: 30px;
   line-height: 1.6;
   margin-bottom: 50px;
   outline: 0;
@@ -178,4 +178,8 @@ h1#timer {
 /* Social*/
 .social-btns {
 	border-radius: initial;
+}
+
+#time-of-flight {
+    margin-bottom: 0;
 }

@@ -4,6 +4,7 @@ var h1 = document.getElementById('timer'),
     stop = document.getElementById('stop'),
     clear = document.getElementById('clear'),
     calcFlowRate = document.getElementById('calc-flow-rate'),
+    result = document.getElementById('result'),
     seconds = 0, minutes = 0, hours = 0,
     t, getTime, timeOfFlight, flowRateResult, volume;
 
@@ -17,7 +18,7 @@ function add() {
             hours++;
         }
     }
-    
+
     h1.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
 
     timer();
@@ -45,10 +46,11 @@ clear.onclick = function() {
 
 calcFlowRate.onclick = function flowRate() {
 	timeOfFlight = parseFloat(document.getElementById('time-of-flight').value);
-	flowRateResult = (timeOfFlight * (Math.pow(1480, 2)))/(2 * (0.0176 + 0.027));
+	flowRateResult = ((timeOfFlight * Math.pow(10, -6)) * (Math.pow(1480, 2)))/(2 * (0.0176 + 0.027));
 	volume = flowRateResult * getTime;
-	console.log('flow rate ', flowRateResult);
-	console.log(volume, typeof(volume));
+    if (!isNaN(volume)){
+        result.innerHTML = volume;
+    }
 }
 
 
