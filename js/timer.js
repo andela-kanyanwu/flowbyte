@@ -62,7 +62,7 @@ calcFlowRate.onclick = function flowRate() {
 	volume = volume.toFixed(2);
 
     if (!isNaN(volume)){
-        result.innerHTML = 'Volume = ' + volume + ' Litres';
+        result.innerHTML = 'Volume = ' + roundToTwo(volume) + ' Litres';
         history.time = getTime;
         history.flowRate = flowRateResult;
         history.volume = volume;
@@ -75,4 +75,6 @@ calcFlowRate.onclick = function flowRate() {
     // document.getElementById('history-list').appendChild(history);
 }
 
-
+function roundToTwo(num) {    
+    return +(Math.round(num + "e+2")  + "e-2");
+}
