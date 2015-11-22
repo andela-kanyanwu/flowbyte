@@ -64,15 +64,9 @@ h6,
   font-family: quicksand,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: .9em;
   margin: 20px auto;
+  outline: 0;
   padding: 15px;
   text-transform: uppercase;
-	transition: all .2s linear;
-}
-
-.btn-overide:hover {
-	background-color: transparent;
-	border-color: #54ca03;
-	color: #54ca03;
 }
 
 /* Flowbyte Demo */
