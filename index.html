@@ -52,14 +52,14 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact Us</a>
-                    </li>
-                </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact Us</a>
+                </li>
+              </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -70,34 +70,37 @@
     <!-- Header -->
     <a name="about"></a>
     <div class="intro-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="intro-message">
-                        <h2>Measure Your Flow</h>
-                        <hr class="intro-divider">
-                        <p class="btn-overide">Run Demo <i class="fa fa-angle-double-right"></i></p>
-                    </div>
-                </div>
-                <div class="col-lg-2"></div>
-                <div class="col-lg-6">
-                  <div class="f-demo text-center">
-                    <h1 id="timer"><timer>00:00:00</timer></h1>
-                    <button id="start" class="btn-control">Start</button>
-                    <button id="stop" class="btn-control">Stop</button>
-                    <button id="clear" class="btn-control">Clear</button>
-
-                    <br/><br />
-                    <h3>Change in Time of Flight:</h3>
-                    <input type="number" id="time-of-flight" placeholder="...in seconds" class="tof-input">
-                    <br />
-                    <button id="calc-flow-rate" class="btn-calc">Calculate Volume</button>
-                    <div id="display-result"><p id="result"></p></div>
-                  </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="intro-message">
+              <h2>Measure Your Flow</h>
+              <hr class="intro-divider">
+              <p class="btn-overide">Demo <i class="fa fa-angle-double-right"></i></p>
             </div>
+          </div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-6">
+            <div class="f-demo text-center">
+              <h1 id="timer"><timer>00:00:00</timer></h1>
+              <div id='start-stop-clear'>
+                <button id="start" class="btn-control">Start</button>
+                <button id="stop" class="btn-control">Stop</button>
+                <button id="clear" class="btn-control">Clear</button>
+              </div>
+
+              <br />
+              <h3>Change in Time of Flight:</h3>
+              <input type="number" id="time-of-flight" placeholder="...in seconds" class="tof-input">
+              <br />
+              <br />
+              <button id="calc-flow-rate" class="btn-calc">Calculate Volume</button>
+              <div id="display-result"><p id="result"></p></div>
+            </div>
+          </div>
         </div>
-        <!-- /.container -->
+      </div>
+      <!-- /.container -->
     </div>
     <!-- /.intro-header -->
 
