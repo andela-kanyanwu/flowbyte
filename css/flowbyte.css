@@ -21,8 +21,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.f-head {
+h6 {
     font-family: quicksand_bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
@@ -30,13 +29,14 @@ h6,
 .flow-nav {
 	background: url('../img/f-bg-dark-xp.png');
 	border: none;
-	padding: 20px 0;
+	padding: 10px 0;
 }
 
 .flow-nav .navbar-nav>li>a {
 	color: #54ca03;
 	text-transform: uppercase;
 	transition: all .2s;
+	line-height: 4;
 }
 
 .flow-nav .navbar-nav>li>a:hover {
@@ -192,4 +192,24 @@ h1#timer {
   font-size: 2.5em;
   font-weight: bold;
   margin-top: 10px;
+}
+
+
+/* Footer */
+.list-inline a {
+	color: #54ca03;
+}
+
+.contact ul {
+	list-style: none;
+	padding: 0;
+}
+
+.contact ul li {
+	padding: 5px 0;
+}
+
+.contact ul li i {
+	color: #54ca03;
+	padding-right: 10px;
 }
