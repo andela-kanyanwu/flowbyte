@@ -34,7 +34,6 @@ start.onclick = timer;
 stop.onclick = function() {
 	  var time = h1.textContent.split(':');
 	  getTime = ((+time[0]) * 60 * 60) + ((+time[1]) * 60) + (+time[2]);
-	  console.log('time in seconds: ', getTime);
     clearTimeout(t);
 }
 
@@ -45,9 +44,11 @@ clear.onclick = function() {
 }
 
 calcFlowRate.onclick = function flowRate() {
-	timeOfFlight = parseFloat(document.getElementById('time-of-flight').value);
-	flowRateResult = ((timeOfFlight * Math.pow(10, -6)) * (Math.pow(1480, 2)))/(2 * (0.0176 + 0.027));
-	volume = flowRateResult * getTime;
+	timeOfFlight = parseFloat(document.getElementById('time-of-flight').value) * Math.pow(10, -6);
+    speedOfSound = Math.pow(1480, 2)
+	flowRateResult = (timeOfFlight * speedOfSound)/(2 * (0.0176 + 0.027));
+	volume = flowRateResult * getTime * ((Math.PI * Math.pow(0.0176, 2))/4);
+
     if (!isNaN(volume)){
         result.innerHTML = volume;
     }

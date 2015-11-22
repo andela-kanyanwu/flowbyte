@@ -47,7 +47,7 @@
                 </button>
                 <a class="navbar-brand topnav f-head " href="#">
                     <span class="f-text-1">flow</span><span class="f-text-2">byte</span>
-                    <!-- <img src="../img/flowbyte.png" alt="flowbyte"> -->
+                    <!-- <img src="img/flowbyte.png" alt="flowbyte"> -->
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -82,6 +82,7 @@
           <div class="col-lg-2"></div>
           <div class="col-lg-6">
             <div class="f-demo text-center">
+              <input type="number" placeholder="Enter serial number" class="tof-input"/>
               <h1 id="timer"><timer>00:00:00</timer></h1>
               <div id='start-stop-clear'>
                 <button id="start" class="btn-control">Start</button>
@@ -91,7 +92,7 @@
 
               <br />
               <h3>Change in Time of Flight:</h3>
-              <input type="number" id="time-of-flight" placeholder="...in seconds" class="tof-input">
+              <input type="number" id="time-of-flight" placeholder="...in micro seconds" class="tof-input">
               <br />
               <br />
               <button id="calc-flow-rate" class="btn-calc">Calculate Volume</button>
