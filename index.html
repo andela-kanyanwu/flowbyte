@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="flowbyteApp">
 
 <head>
 
@@ -31,7 +31,7 @@
 
 </head>
 
-<body>
+<body ng-controller="flowbyteController">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav flow-nav" role="navigation">
@@ -103,11 +103,12 @@
 
     <!-- Page Content -->
 
-    <!-- <a name="about"></a>
+    <a name="history"></a>
     <div class="content-section-a content-result">
         <div class="container">
             <div class="row">
                 <h1 class="text-center">History</h1>
+                <h2 ng-bind="test"></h2>
                 <hr class="about-hr">
                 <div class="clearfix"></div>
                 <div class="col-lg-5 col-sm-6">
@@ -119,7 +120,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- /.content-result -->
 
 
@@ -274,6 +275,11 @@
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <script type="text/javascript" src="js/timer.js"></script>
+
+    <!-- AngularJS -->
+    <script type="text/javascript" src="lib/angular-1.4.7/angular.js"></script>
+    <script type="text/javascript" src="lib/angular-1.4.7/angular-resource.js"></script>
+    <script type="text/javascript" src="js/flowbyte.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>

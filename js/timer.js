@@ -62,17 +62,18 @@ calcFlowRate.onclick = function flowRate() {
 
     if (!isNaN(volume)){
         result.innerHTML = 'Volume = ' + roundToTwo(volume) + ' Litres';
-        
+
         history.time = getTime;
         history.flowRate = flowRateResult;
         history.volume = volume;
         history.dateTime = new Date();
     }
-    // console.log('hash: ', history);
+    console.log('hash: ', history);
 
-    // var h = document.createElement('li')
-    // var 
-    // document.getElementById('history-list').appendChild(history);
+    var h = document.createElement('li');
+    var h_text = document.createTextNode(history.volume);
+    h.appendChild(h_text);
+    document.getElementById('history-list').appendChild(h);
 }
 
 function roundToTwo(num) {    
